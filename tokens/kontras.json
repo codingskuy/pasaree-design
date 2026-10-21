@@ -1,0 +1,21 @@
+{
+  "keterangan": "Pasangan teks/latar yang wajib lolos WCAG 2.1 AA. teks normal >= 4.5, teks besar (>= 22 px atau >= 18,66 px tebal) >= 3.",
+  "pasangan": [
+    { "depan": "teks", "belakang": "latar", "minimal": 4.5 },
+    { "depan": "teks", "belakang": "permukaan", "minimal": 4.5 },
+    { "depan": "teks_redam", "belakang": "latar", "minimal": 4.5 },
+    { "depan": "teks_redam", "belakang": "permukaan", "minimal": 4.5 },
+    { "depan": "pasaree_hijau_daun", "belakang": "latar", "minimal": 4.5 },
+    { "depan": "pasaree_terakota", "belakang": "latar", "minimal": 4.5 },
+    { "depan": "kunyit_teks", "belakang": "latar", "minimal": 4.5 },
+    { "depan": "teks_di_hijau", "belakang": "pasaree_hijau_daun", "minimal": 4.5 },
+    { "depan": "teks_di_kunyit", "belakang": "pasaree_kunyit", "minimal": 4.5 },
+    { "depan": "teks_di_terakota", "belakang": "pasaree_terakota", "minimal": 4.5 },
+    { "depan": "pasaree_hijau_daun", "belakang": "hijau_latar_lembut", "minimal": 4.5 },
+    { "depan": "kunyit_teks", "belakang": "kunyit_latar_lembut", "minimal": 4.5 },
+    { "depan": "pasaree_terakota", "belakang": "terakota_latar_lembut", "minimal": 4.5 },
+    { "depan": "harga", "belakang": "permukaan", "minimal": 4.5 },
+    { "depan": "harga_coret", "belakang": "permukaan", "minimal": 4.5 },
+    { "depan": "label_komisi", "belakang": "permukaan", "minimal": 4.5 }
+  ]
+}

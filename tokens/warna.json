@@ -1,7 +1,23 @@
 {
   "pasaree_hijau_daun": "#2F7D4F",
   "pasaree_kunyit": "#E0A100",
-  "pasaree_terakota": "#C0563B",
+  "pasaree_terakota": "#B54A31",
   "latar": "#FFFDF7",
-  "teks": "#1E1E1E"
+  "teks": "#1E1E1E",
+  "teks_redam": "#5C5C5C",
+  "permukaan": "#FFFFFF",
+  "garis": "#D9D3C4",
+  "teks_di_hijau": "#FFFFFF",
+  "teks_di_kunyit": "#1E1E1E",
+  "teks_di_terakota": "#FFFFFF",
+  "kunyit_teks": "#7A5600",
+  "hijau_latar_lembut": "#EEF6F1",
+  "kunyit_latar_lembut": "#FBF3DC",
+  "terakota_latar_lembut": "#FBEAE5",
+  "status_sukses": "#2F7D4F",
+  "status_peringatan": "#7A5600",
+  "status_galat": "#B54A31",
+  "harga": "#1E1E1E",
+  "harga_coret": "#5C5C5C",
+  "label_komisi": "#5C5C5C"
 }

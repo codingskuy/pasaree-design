@@ -1,0 +1,36 @@
+{
+  "keterangan": "Aturan tampilan harga (komponen HargaProduk). Satu-satunya cara memformat uang di mobile dan web: formatIdr(). Rujukan: lapak/00-piagam-kurasi.md §2.3 dan §4, produk/30-modul-KMP-bersama.md §5.",
+  "format": {
+    "awalan": "Rp",
+    "pemisah_ribuan": ".",
+    "desimal": 0,
+    "spasi_setelah_awalan": false,
+    "tipe_nilai": "integer IDR"
+  },
+  "aturan_produk": {
+    "kelipatan": 500,
+    "minimal": 500
+  },
+  "contoh_format": [
+    { "idr": 0, "tampil": "Rp0" },
+    { "idr": 500, "tampil": "Rp500" },
+    { "idr": 2000, "tampil": "Rp2.000" },
+    { "idr": 56000, "tampil": "Rp56.000" },
+    { "idr": 1250000, "tampil": "Rp1.250.000" }
+  ],
+  "komponen": {
+    "HargaProduk": {
+      "varian": {
+        "normal": { "token_harga": "harga", "tampil": ["harga"] },
+        "diskon": { "token_harga": "harga", "token_coret": "harga_coret", "tampil": ["harga", "harga_awal_coret", "periode_diskon"] }
+      },
+      "diskon_wajib": ["harga_awal_idr", "periode_mulai", "periode_selesai"]
+    },
+    "LabelKomisi": {
+      "token_teks": "label_komisi",
+      "tampil_di": ["web_lapak"],
+      "dilarang_di": ["mobile_pembeli"],
+      "sifat": "info, bukan beban pembeli; tidak pernah menambah total"
+    }
+  }
+}

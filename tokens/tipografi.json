@@ -1,6 +1,10 @@
 {
-  "judul_besar": { "ukuran": 28, "berat": 700 },
-  "judul": { "ukuran": 22, "berat": 700 },
-  "badan": { "ukuran": 16, "berat": 400 },
-  "kecil": { "ukuran": 13, "berat": 400 }
+  "judul_besar": { "ukuran": 28, "berat": 700, "tinggi_baris": 36 },
+  "judul": { "ukuran": 22, "berat": 700, "tinggi_baris": 28 },
+  "subjudul": { "ukuran": 18, "berat": 600, "tinggi_baris": 24 },
+  "badan": { "ukuran": 16, "berat": 400, "tinggi_baris": 24 },
+  "kecil": { "ukuran": 13, "berat": 400, "tinggi_baris": 18 },
+  "harga_besar": { "ukuran": 22, "berat": 700, "tinggi_baris": 28 },
+  "harga": { "ukuran": 16, "berat": 700, "tinggi_baris": 24 },
+  "harga_coret": { "ukuran": 13, "berat": 400, "tinggi_baris": 18 }
 }
