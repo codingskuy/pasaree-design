@@ -2,5 +2,10 @@
   "name": "pasaree-design",
   "version": "0.1.0",
   "private": true,
-  "description": "Token desain Pasaree"
+  "type": "module",
+  "description": "Token desain Pasaree",
+  "scripts": {
+    "validate:tokens": "node scripts/validate-tokens.mjs",
+    "test": "node --test scripts/*.test.mjs"
+  }
 }
