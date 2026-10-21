@@ -24,3 +24,18 @@ test('mobile pembeli tidak menampilkan komisi', () => {
   const d = baca('flow-mobile-pembeli.md');
   assert.match(d, /komisi lapak TIDAK ditampilkan di mobile/);
 });
+
+test('flow web lapak memuat layar wajib dan 7 status produk', () => {
+  const d = baca('flow-web-lapak-kurasi.md');
+  for (const l of ['Draf produk', 'Stok dan harga', 'Pesanan masuk', 'Serah trip', 'Antrean kurasi', 'Kalkulator komisi + estimasi payout']) {
+    assert.match(d, new RegExp(`\\| ${l.replace(/[+]/g, '\\+')} \\|`), `layar ${l} hilang`);
+  }
+  for (const s of ['DRAF', 'MENUNGGU_KURASI', 'PERLU_REVISI', 'TAYANG', 'NONAKTIF_STOK_0', 'TAKEDOWN', 'ARSIP']) {
+    assert.ok(d.includes('| `' + s + '` |'), `status ${s} hilang`);
+  }
+});
+test('kalkulator menegaskan komisi dari payout, bukan pembeli', () => {
+  const d = baca('flow-web-lapak-kurasi.md');
+  assert.match(d, /BUKAN dari pembeli/);
+  assert.match(d, /Komisi dipotong dari payout kamu, bukan dari pembeli/);
+});
